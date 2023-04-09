@@ -8,8 +8,8 @@ package com.mycompany.lab8;
  *
  * @author alyss
  */
-public class SinglyLinkedList {
-     class Node{
+
+class Node{
     public int data;
    public Node next;
 
@@ -19,11 +19,11 @@ public class SinglyLinkedList {
    }
 }
 
-class LinkedList {
+class SinglyLinkedList {
    private Node head;
    private Node tail;
     
-   public LinkedList() {
+   public SinglyLinkedList() {
       head = null;
       tail = null;
    }
@@ -66,7 +66,9 @@ class LinkedList {
          currentNode.next = newNode;
       }
    }
-   
+   public Node getHead(){
+       return head;
+   }
 
    public void removeAfter(Node currentNode) {
       if (currentNode == null && head != null) {
@@ -88,7 +90,7 @@ class LinkedList {
       }
    }
 }
-}
+
 
 
 
