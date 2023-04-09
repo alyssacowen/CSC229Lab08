@@ -25,6 +25,7 @@ public class Lab8 {
            }
        }
    }
+   //for sum
    int sum = 0;
    Node current = primeNumbersThatContainAThree.getHead();
    while (current != null){
